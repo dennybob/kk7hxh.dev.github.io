@@ -20,7 +20,7 @@
     </div>
   </header>
 
-  <!-- Modal Popup (About Button) -->
+  <!-- Modal Popup #1 - About Button -->
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
       <header class="w3-container w3-theme"> 
@@ -29,13 +29,28 @@
         <h4>Thank you for visiting...</h4>
       </header>
       <div class="w3-padding">
-        <p>Welcome to my amateur radio website! This is where I keep my list of frequencies, tools and calculators that I have made, and links to sites I find useful. I'll be updating it from time to time with new content as I can. Feel free to browse about, maybe I'll catch you on the air! 73</p>
+        <p>Welcome to my amateur radio website! This is where I keep my list of frequencies and useful links, as well as calculators that I have made. I've just started it so I'll be updating it from time to time with new content as I can. Feel free to browse about, I hope you find it useful and maybe I'll catch you on the air! <br><b>73</b></p>
       </div>
       <footer class="w3-container w3-theme">
         <h4>KK7XHX (Dennis)</h4>
       </footer>
     </div>
   </div>
+
+    <!-- Modal Popup #2 - Tooltip Info Button - Adventure Radio Protocol 144.580 -->
+    <div id="id02" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-theme"> 
+          <span onclick="document.getElementById('id02').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+          <h4>146.580 MHz - Adventure Radio Protocol</h4>
+        </header>
+        <div class="w3-padding">
+          <p>67.0 Hz - Emergency<br>77.0 Hz - Repeater Ping<br>88.5 Hz - SOTA/POTA<br>100.0 HZ - Ragchew<br>123.0 Hz - Repeater Msg.</p>
+        </div>
+        <footer class="w3-container w3-theme w3-small">More info available at <a href="http://www.sierraradio.net/adventure-radio.html">Sierra Radio</a></footer>
+      </div>
+    </div>
 
   <!-- Tab Bar -->
   <div class="w3-bar w3-theme">
@@ -53,28 +68,107 @@
     </button>
   </div>
   
+
+
+
   <!-- Tabbed Content - Frequencies -->
   <div id="Frequencies" class="w3-container tab w3-animate-opacity">
-    <!-- Table-1 -->
+
+    <!-- Container for all tables -->
     <div class="w3-container w3-stretch">
+
       <hr>
+
+      <!-- Table-1 = Common Frequencies-->
       <div class="w3-responsive w3-card-4">
         <table class="w3-table w3-striped w3-bordered">
-          <caption class="w3-theme w3-xlarge">FM Repeaters</caption>  
-          <caption class="w3-theme"><b>2m</b> (144.0MHz - 148.0MHz)</caption>
-          <caption class="w3-theme"><b>70cm</b> (420.0MHz - 450.0MHz)</caption> 
+          <caption class="w3-theme w3-xlarge">Common Frequencies</caption>  
+          <caption class="w3-theme">%%% WHAT TO PUT HERE? %%%</caption>
           <thead>
             <tr class="w3-theme">
-              <th>Channel</th>
-              <th>Frequencies</th>
-              <th>Info</th>
+              <th>Frequency</th>
+              <th>Designation</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>144.520</td><td>2M FM National Calling Freq.</td><td>Simplex</td></tr>
+            <tr><td>144.580</td><td>Adventure Radio Protocol</td><td><span onclick="document.getElementById('id02').style.display='block';" class="w3-tooltip">CTCSS Protocol</span></td></tr>
+            <tr><td>146.600</td><td>2M Cross-Band Linking Freq.</td><td>Use CTCSS/DCS</td></tr>
+            <tr><td>432.100</td><td>70cm SSB National Calling Freq.</td><td>Simplex</td></tr>
+            <tr><td>440.025</td><td>70cm Cross-Band Linking Freq.</td><td>Use CTCSS/DCS</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr>
+
+      <!-- Table-2 = 2M Band Plan-->
+      <div class="w3-responsive w3-card-4">
+        <table class="w3-table w3-striped w3-bordered">
+          <caption class="w3-theme w3-xlarge">2M Band Plan</caption>  
+          <caption class="w3-theme">144 - 148 MHz</caption>
+          <thead>
+            <tr class="w3-theme">
+              <th>Frequency</th>
+              <th>Designation</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>144.000 - 144.300</td><td>Weak Signal</td><td></td></tr>
+            <tr><td>144.300 - 144.500</td><td>New Oscar Sub-Band</td><td>Satelite Only</td></tr>
+            <tr><td>144.500 - 144.600</td><td>FM Repeater / Linear Translator Inupts</td><td></td></tr>
+            <tr><td>144.600 - 144.900</td><td>FM Repeater Inputs</td><td></td></tr>
+            <tr><td>144.900 - 145.100</td><td>Packet Radio / Digital</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr>
+
+      <!-- Table-3 = 70cm Band Plan-->
+      <div class="w3-responsive w3-card-4">
+        <table class="w3-table w3-striped w3-bordered">
+          <caption class="w3-theme w3-xlarge">70cm Band Plan</caption>  
+          <caption class="w3-theme">420 - 450 MHz</caption> 
+          <thead>
+            <tr class="w3-theme">
+              <th>Frequency</th>
+              <th>Designation</th>
+              <th>Note</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Ch. 1
-                <br><a href="https://www.winsystem.org/repeaters/seattle" target="_blank" rel="noopener noreferrer">W7TWA</a>
-                <br><a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=641" target="_blank" rel="noopener noreferrer">53-641</a>
+              <td>
+                <a href="https://www.winsystem.org/repeaters/seattle" target="_blank" rel="noopener noreferrer">W7TWA</a><br>
+                <a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=641" target="_blank" rel="noopener noreferrer">53-641</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+        <hr>
+
+      <!-- Table-4 = FM Repeaters-->
+      <div class="w3-responsive w3-card-4">
+        <table class="w3-table w3-striped w3-bordered">
+          <caption class="w3-theme w3-xlarge">FM Repeaters</caption>
+          <caption class="w3-theme">contains external links</caption> 
+          <thead>
+            <tr class="w3-theme">
+              <th>Info</th>
+              <th>Frequency</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://www.winsystem.org/repeaters/seattle" target="_blank" rel="noopener noreferrer">W7TWA</a><br>
+                <a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=641" target="_blank" rel="noopener noreferrer">53-641</a>
               </td>
               <td>441.625.00
                 <br>+5.0 MHz
@@ -85,9 +179,10 @@
               </td>
             </tr>
             <tr>
-              <td>Ch. 2
-                <br>W7AAO
-                <br><a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=415" target="_blank" rel="noopener noreferrer">53-415</a>
+              <td>
+                <a>W7AAO</a>
+                <br>
+                <a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=415" target="_blank" rel="noopener noreferrer">53-415</a>
               </td>
               <td>145.370.00
                 <br>-0.6 MHz
@@ -99,9 +194,10 @@
               </td>
             </tr>
             <tr>
-              <td>Ch. 3
-                <br><a href="https://www.winsystem.org/repeaters/seattle" target="_blank" rel="noopener noreferrer">WA7HJR</a>
-                <br><a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=260" target="_blank" rel="noopener noreferrer">53-260</a>
+              <td>
+                <a href="https://www.winsystem.org/repeaters/seattle" target="_blank" rel="noopener noreferrer">WA7HJR</a>
+                <br>
+                <a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=260" target="_blank" rel="noopener noreferrer">53-260</a>
               </td>
               <td>444.650.00
                 <br>+5.0 MHz
@@ -113,9 +209,9 @@
               </td>
             </tr>
             <tr>
-              <td>Ch. 4
-                <br><a href="https://www.mikeandkey.org/repeaters.php" target="_blank" rel="noopener noreferrer">K7LED</a>
-                <br><a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=302" target="_blank" rel="noopener noreferrer">53-302</a>
+              <td>
+                <a href="https://www.mikeandkey.org/repeaters.php" target="_blank" rel="noopener noreferrer">K7LED</a><br>
+                <a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=302" target="_blank" rel="noopener noreferrer">53-302</a>
               </td>
               <td>146.820.00
                 <br>-0.6 MHz
@@ -127,9 +223,10 @@
               </td>
             </tr>
             <tr>
-              <td>Ch. 5
-                <br><a href="https://www.pc-sar-council.org" target="_blank" rel="noopener noreferrer">WB7DOB</a>
-                <br><a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=5355" target="_blank" rel="noopener noreferrer">53-5355</a>
+              <td>
+                <a href="https://www.pc-sar-council.org" target="_blank" rel="noopener noreferrer">WB7DOB</a>
+                <br>
+                <a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=5355" target="_blank" rel="noopener noreferrer">53-5355</a>
               </td>
               <td>147.300.00
                 <br>+0.6 MHz
@@ -234,8 +331,29 @@
           </tbody>
         </table>
       </div>
+
+      <hr>
+
+      <!-- Table-5 = 2M Band Plan-->
+      <div class="w3-responsive w3-card-4">
+        <table class="w3-table w3-striped w3-bordered">
+          <caption class="w3-theme w3-xlarge">Sources</caption>  
+          <caption class="w3-theme"></caption>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://www.wwara.org/documents/2m-band-plan/">WWARA - 2M Band Plan</a>,
+                <a href="https://www.wwara.org/documents/70cmbandplan/">WWARA - 70cm Band Plan</a>, 
+                <a href="http://www.sierraradio.net/adventure-radio.html">Sierra Radio</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr>
+
     </div>
-    <hr>
   </div>
   
   <!-- Tabbed Content - Calculators -->
