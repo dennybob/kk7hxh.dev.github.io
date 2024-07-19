@@ -46,7 +46,7 @@
           <h4>146.580 MHz - Adventure Radio Protocol</h4>
         </header>
         <div class="w3-padding">
-          <p>67.0 Hz - Emergency<br>77.0 Hz - Repeater Ping<br>88.5 Hz - SOTA/POTA<br>100.0 HZ - Ragchew<br>123.0 Hz - Repeater Msg.</p>
+          <p><b>CTCSS Tone Schedule</b><br>67.0 Hz - Emergency<br>77.0 Hz - Repeater Ping<br>88.5 Hz - SOTA/POTA<br>100.0 HZ - General<br>123.0 Hz - Repeater Msg.</p>
         </div>
         <footer class="w3-container w3-theme w3-small">More info available at <a href="http://www.sierraradio.net/adventure-radio.html">Sierra Radio</a></footer>
       </div>
@@ -78,30 +78,27 @@
     <div class="w3-container w3-stretch">
 
       <hr>
-
-      <!-- Table-1 = Common Frequencies-->
+<!-- 
+      /////////// Table-1 = Common Frequencies
       <div class="w3-responsive w3-card-4">
         <table class="w3-table w3-striped w3-bordered">
-          <caption class="w3-theme w3-xlarge">Common Frequencies</caption>  
-          <caption class="w3-theme">Amateur 2M & 70cm</caption>
+          <caption class="w3-theme w3-xlarge">Table Title</caption>  
+          <caption class="w3-theme"></caption>
           <thead>
             <tr class="w3-theme">
               <th>Frequency</th>
               <th>Designation</th>
-              <th>Note</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>144.520</td><td>2M National Calling Freq.</td><td>FM Simplex</td></tr>
-            <tr><td>144.580</td><td>Adventure Radio Protocol</td><td><span onclick="document.getElementById('id02').style.display='block';" class="w3-tooltip">CTCSS Protocol (ℹ︎)</span></td></tr>
-            <tr><td>146.600</td><td>2M Cross-Band Linking Freq.</td><td>Use CTCSS/DCS</td></tr>
-            <tr><td>432.100</td><td>70cm SSB National Calling Freq.</td><td>FM Simplex</td></tr>
-            <tr><td>440.025</td><td>70cm Cross-Band Linking Freq.</td><td>Use CTCSS/DCS</td></tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
           </tbody>
         </table>
       </div>
 
       <hr>
+ -->
 
       <!-- Table-2 = 2M Band Plan-->
       <div class="w3-responsive w3-card-4">
@@ -117,10 +114,11 @@
           <tbody>
             <tr><td>144.000 - 144.050</td><td>EME (CW)</td></tr>
             <tr><td>144.050 - 144.100</td><td>General CW & Weak Signal</td></tr>
-            <tr><td>144.100 - 144.200</td><td>EME & Weak Signal SSB</td></tr>
+            <tr><td>144.100 - 144.200</td><td>EME & Weak Signal (SSB)</td></tr>
             <tr><td>144.200 - 144.275</td><td>General SSB Operation</td></tr>
             <tr><td>144.275 - 144.300</td><td>Propagation Beacons</td></tr>
             <tr><td>144.300 - 144.500</td><td>OSCAR Sub-Band</td></tr>
+            <tr><td><b>144.390</td></b><td><b>APRS</b></td></tr>
             <tr><td>144.500 - 144.600</td><td>FM Repeater / Linear Translator Inputs</td></tr>
             <tr><td>144.600 - 144.900</td><td>FM Repeater Inputs</td></tr>
             <tr><td>144.900 - 145.100</td><td>Digital / Packet Radio</td></tr>
@@ -130,13 +128,14 @@
             <tr><td>145.800 - 146.000</td><td>OSCAR Sub-Band</td></tr>
             <tr><td>146.010 - 146.400</td><td>Repeater Inputs</td></tr>
             <tr><td>146.400 - 146.500</td><td>Repeater Outputs (Ultra/Narrowband)</td></tr>
-            <tr><td>145.520</td><td>National Simplex Frequency</td></tr>
+            <tr><td><b>145.520</b></td><td><b>National Calling Frequency (FM)</b></td></tr>
             <tr><td>146.520 - 146.580</td><td>FM Simplex</td></tr>
-            <tr><td>146.600</td><td>Cross-Band Linking Frequency</td></tr>
+            <tr><td><b>145.580</b></td><td><b>Adventure Radio Protocol</b><span onclick="document.getElementById('id02').style.display='block';" class="w3-tooltip w3-text-blue w3-large"> ℹ︎</span></td></tr>
+            <tr><td><b>146.600</b></td><td><b>Cross-Band Linking (CTCSS/DCS)</b></td></tr>
             <tr><td>146.620 - 147.380</td><td>Repeater Outputs</td></tr>
-            <tr><td>147.395 - 147.500</td><td>Repeater Inputs (Ultra/Narrowband)</td></tr>
+            <tr><td>147.400 - 147.500</td><td>Repeater Inputs (Ultra/Narrowband)</td></tr>
             <tr><td>147.520 - 147.600</td><td>FM Simplex (Narrowband)</td></tr>
-            <tr><td>147.610 - 148.990</td><td>Repeater Inputs</td></tr>
+            <tr><td>147.610 - 147.990</td><td>Repeater Inputs</td></tr>
           </tbody>
         </table>
       </div>
@@ -152,16 +151,38 @@
             <tr class="w3-theme">
               <th>Frequency</th>
               <th>Designation</th>
-              <th>Note</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <a href="https://www.winsystem.org/repeaters/seattle" target="_blank" rel="noopener noreferrer">W7TWA</a><br>
-                <a href="https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=641" target="_blank" rel="noopener noreferrer">53-641</a>
-              </td>
-            </tr>
+            <tr><td>420.000 - 432.000</td><td>ATV Video Carrier</td></tr>
+            <tr><td>430.000 - 430.400</td><td>Aux. & Repeater Links</td></tr>
+            <tr><td>430.400 - 430.500</td><td>Hot Spot Nodes</td></tr>
+            <tr><td>430.500 - 430.800</td><td>Aux. & Repeater Links</td></tr>
+            <tr><td>430.800 - 431.000</td><td>Packet Radio</td></tr>
+            <tr><td>431.000 - 432.000</td><td>Aux. & Repeater Links</td></tr>
+            <tr><td>432.000 - 432.070</td><td>EME</td></tr>
+            <tr><td>432.070 - 432.100</td><td>Weak Signal (CW)</td></tr>
+            <tr><td><b>432.100</b></td><td><b>National Calling Frequency (SSB)</b></td></tr>
+            <tr><td>432.100 - 432.300</td><td>Weak Signal (Mixed Mode)</td></tr>
+            <tr><td>432.300 - 432.400</td><td>Propagation Beacons</td></tr>
+            <tr><td>432.400 - 433.000</td><td>Weak Signal (Mixed Mode)</td></tr>
+            <tr><td>433.000 - 435.000</td><td>Aux. & Repeater Links</td></tr>
+            <tr><td>435.000 - 438.000</td><td>OSCAR</td></tr>
+            <tr><td>438.000 - 439.400</td><td>Aux. & Repeater Links</td></tr>
+            <tr><td>439.400 - 439.500</td><td>Hot Spot Nodes</td></tr>
+            <tr><td>439.500 - 439.800</td><td>Aux. & Repeater Links</td></tr>
+            <tr><td>439.800 - 440.000</td><td>Packet Radio</td></tr>
+            <tr><td><b>440.025</b></td><td><b>Cross-Band Linking (CTCSS/DCS)</b></td></tr>
+            <tr><td>440.000 - 440.700</td><td>Repeater Outputs</td></tr>
+            <tr><td>440.700 - 440.800</td><td>Repeater Outputs (Narrowband/Digital)</td></tr>
+            <tr><td>440.800 - 440.900</td><td>Simplex Packet</td></tr>
+            <tr><td>440.900 - 445.000</td><td>ATV Video Carrier</td></tr>
+            <tr><td><b>441.000</b></td><td><b>National Packet Simplex</b></td></tr>
+            <tr><td>445.000 - 445.700</td><td>Repeater Inputs</td></tr>
+            <tr><td>445.700 - 445.800</td><td>Repeater Inputs (Narrowband/Digital)</td></tr>
+            <tr><td>445.800 - 445.900</td><td>Voice Simplex</td></tr>
+            <tr><td>445.900 - 450.000</td><td>ATV Video Carrier</td></tr>
+            <tr><td><b>446.000</b></td><td><b>National Calling Frequency (FM)</b></td></tr>
           </tbody>
         </table>
       </div>
@@ -254,91 +275,91 @@
               </td>
             </tr>
             <tr>
-              <td>Ch. 6</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 7</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 8</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 9</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 10</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 11</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 12</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 13</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 14</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 15</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 16</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 17</td>
+              <td></td>
               <td></td>
               <td>
 
               </td>
             </tr>
             <tr>
-              <td>Ch. 18</td>
+              <td></td>
               <td></td>
               <td>
 
